@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   android:paddingHorizontal="30dp"
+    android:paddingVertical="60dp">
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="25dp"
+        android:textSize="22sp"
+        android:text="Register"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Register"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginBottom="20dp"
+        android:hint="username"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Text1"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginBottom="20dp"
+        android:hint="email"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/Text3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Text2"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginBottom="20dp"
+        android:hint="phone"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/Text4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Text3"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginBottom="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="20dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By checking the box you agree to our Terms and Conditions."
+        android:textSize="12sp"
+        android:id="@+id/Reminder"
+        android:layout_below="@id/Text4"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="register"
+        android:id="@+id/button_register"
+        android:layout_above="@id/Reminder2"
+        android:backgroundTint="@color/blue"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have an Account? Log in"
+        android:id="@+id/Reminder2"
+        android:gravity="center"
+       android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
